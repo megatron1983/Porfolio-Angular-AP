@@ -1,1 +1,94 @@
-<p>header works!</p>
+<header id="navegacion">
+  <nav style="background-color: rgb(48, 70, 194) !important"
+    class="navbar navbar-expand-lg bg-body-tertiary position-relative">
+    <div class="container-fluid">
+      <div class="menu-celu ">
+        <a target="_blank" class="navbar-brand"
+          href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">
+          <img src="assets/img/argentina-programa.png" alt="Bootstrap" class="img-fluid logo" />
+        </a>
+        <button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia-laboral">Experiencia Laboral</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#educacion">Educación</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#habilidades">Habilidades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="iconos">
+        <li>
+          <a target="_blank" href="https://www.facebook.com/profile.php?id=100069144731521">
+            <i class="fa-brands fa-square-facebook fa-2x" style="color: #ffffff;"></i>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/megatron1983">
+            <i class="fa-brands fa-square-github fa-2x" style="color: #ffffff;"></i>
+          </a>
+        </li>
+        <li>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#login">
+            <i class="fa-solid fa-user fa-2x" style="color: #ffffff;"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
