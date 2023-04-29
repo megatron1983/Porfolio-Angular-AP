@@ -1,0 +1,40 @@
+progress[value] {
+  /* Elimino la apariencia por defecto */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  /* Quito el borde que aparece en Firefox */
+  border: none;
+
+  /* Añado mis propios estilos */
+  width: 270px;
+  height: 30px;
+  overflow: hidden;
+
+  /*  Estos estilos solo se aplicaran al fondo de la barra en mozilla */
+  border: 1px inset #666;
+  background-color: #d8d8d8;
+}
+
+#habilidades .progress {
+  padding: 2rem 1rem;
+}
+
+.progress i {
+  font-size: 2rem;
+}
+
+.progress p {
+  padding: 0 1rem;
+}
+
+.progress {
+  background-color: rgb(223, 224, 230);
+  border-radius: 0;
+  align-items: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}

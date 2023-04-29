@@ -1,0 +1,6 @@
+#inicio {
+  background: linear-gradient(rgba(4, 10, 105, 0.4), rgba(0, 0, 0, 0.9)),
+    url("/assets/img/banner.jpg");
+  height: 500px;
+  color: white;
+}
