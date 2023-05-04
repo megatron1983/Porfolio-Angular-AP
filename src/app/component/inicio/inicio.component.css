@@ -1,6 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 1.2rem;
+}
+
+ul li {
+  list-style-type: none;
+}
 #inicio {
   background: linear-gradient(rgba(4, 10, 105, 0.4), rgba(0, 0, 0, 0.9)),
     url("/assets/img/banner.jpg");
   height: 500px;
   color: white;
+}
+
+#inicio h1 {
+  padding-top: 200px;
+}
+
+@media (max-width: 468px) {
+  #inicio .titulo-banner {
+    font-size: 1.5rem;
+    padding-top: 100px;
+  }
+  #inicio {
+    height: 300px;
+  }
 }

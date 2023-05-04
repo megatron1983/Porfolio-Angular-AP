@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 1.2rem;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 .trabajo {
   padding: 1 rem;
 }
@@ -6,4 +18,61 @@
   color: white;
   padding: 1rem;
   text-align: center;
+}
+#sobre-mi,
+#experiencia-laboral,
+#educacion,
+#habilidades,
+#proyectos,
+#contacto {
+  padding: 5rem 4rem;
+}
+
+.titulo {
+  color: rgb(48, 70, 194);
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+#experiencia-laboral .titulo,
+#educacion .titulo {
+  padding-bottom: 3rem;
+}
+
+.modal-title,
+.form-label {
+  color: gray;
+}
+.trabajo {
+  padding: 1 rem;
+}
+
+.trabajo ul {
+  margin-left: 1.5rem;
+}
+.modal-backdrop {
+  position: static !important;
+}
+@media (max-width: 992px) {
+  #sobre-mi .titulo {
+    margin-top: 4rem;
+  }
+  #experiencia-laboral .trabajo,
+  #educacion .trabajo {
+    margin-bottom: 1rem;
+  }
+  .card {
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+  }
+}
+@media (max-width: 600px) {
+  #sobre-mi,
+  #experiencia-laboral,
+  #educacion,
+  #habilidades,
+  #proyectos,
+  #contacto {
+    padding: 3rem 1.5rem;
+  }
 }

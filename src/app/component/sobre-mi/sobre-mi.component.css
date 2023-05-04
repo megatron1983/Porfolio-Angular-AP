@@ -1,3 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 1.2rem;
+}
+
+ul li {
+  list-style-type: none;
+}
+
 #sobre-mi img {
   width: 250px;
+}
+#sobre-mi,
+#experiencia-laboral,
+#educacion,
+#habilidades,
+#proyectos,
+#contacto {
+  padding: 5rem 4rem;
+}
+
+.titulo {
+  color: rgb(48, 70, 194);
+  text-align: left;
+  padding-bottom: 3rem;
+}
+
+.modal-title,
+.form-label {
+  color: gray;
+}
+
+.modal-backdrop {
+  position: static !important;
+}
+@media (max-width: 992px) {
+  #sobre-mi .titulo {
+    margin-top: 4rem;
+  }
+}
+@media (max-width: 600px) {
+  #sobre-mi,
+  #experiencia-laboral,
+  #educacion,
+  #habilidades,
+  #proyectos,
+  #contacto {
+    padding: 3rem 1.5rem;
+  }
 }
