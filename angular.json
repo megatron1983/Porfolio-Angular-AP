@@ -20,7 +20,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "C:\\Users\\Maxi\\Documents\\Porfolio-Angular\\node_modules\\bootstrap\\dist\\css\\bootstrap.min.css"
+              "C:\\Users\\Maxi\\Documents\\Porfolio-Angular\\node_modules\\bootstrap\\dist\\css\\bootstrap.min.css",
+              "src/styles.css"
             ],
             "scripts": [
               "C:\\Users\\Maxi\\Documents\\Porfolio-Angular\\node_modules\\bootstrap\\dist\\js\\bootstrap.min.js"
