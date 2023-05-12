@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class EducacionserviService {
-  constructor(private http: HttpClient) {}
-  listarEducaciones(): Observable<Educacion[]> {
-    return this.http.get<Educacion[]>();
-  }
+  //constructor(private http: HttpClient) {}
+  //listarEducaciones(): Observable<Educacion[]> {
+  //return this.http.get<Educacion[]>();
+  // }
 }

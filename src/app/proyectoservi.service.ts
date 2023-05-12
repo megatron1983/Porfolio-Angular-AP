@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProyectoserviService {
-
-  constructor() { }
+  //constructor(private http: HttpClient) {}
+  //listarProyecto(): Observable<Proyectos[]> {
+  //return this.http.get<Proyectos[]>();
+  // }
 }

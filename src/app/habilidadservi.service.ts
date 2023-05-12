@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HabilidadserviService {
-
-  constructor() { }
+  constructor() {}
+  //listarHabilidad(): Observable<Habilidad[]> {
+  //return this.http.get<Habilidad[]>();
+  // }
 }

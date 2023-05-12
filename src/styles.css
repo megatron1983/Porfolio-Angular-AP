@@ -30,7 +30,10 @@ ul li {
 #educacion .titulo {
   padding-bottom: 3rem;
 }
-
+.botones-back {
+  display: flex;
+  justify-content: flex-end;
+}
 .modal-title,
 .form-label {
   color: gray;

@@ -31,6 +31,12 @@ progress[value] {
 
 #habilidades .progress {
   padding: 2rem 1rem;
+  margin: 0 2rem 1rem 0;
+}
+
+#habilidades .botones-back {
+  margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 .progress i {

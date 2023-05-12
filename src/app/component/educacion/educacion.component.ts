@@ -36,6 +36,6 @@ export class EducacionComponent {
     },
   ];
   constructor(private service: EducacionserviService) {
-    this.service.listarEducaciones();
+    //this.service.listarEducacion();
   }
 }
