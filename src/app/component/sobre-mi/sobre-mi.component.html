@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4 col-sm-12">
-        <img class="img-fluid" src="assets/img/perfil.jpg" alt="" />
+        <img class="img-fluid" src="img/perfil.jpg" alt="" />
       </div>
       <div class="col-lg-8 col-sm-12">
         <h2 class="titulo">Sobre Mí</h2>
@@ -23,6 +23,24 @@
           los objetivos de proyecto.
         </p>
       </div>
+
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-sm-12 ">
+        <ul class="botones-back">
+
+          <li><button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#editar-sobre-mi">
+              <i class="fa-solid fa-pen-to-square fa-2x" style="color: #1cad7d;"></i>
+
+            </button>
+
+          </li>
+          <li><button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#eliminar-sobre-mi">
+              <i class="fa-solid fa-trash-can fa-2x" style="color: #1cad7d;"></i>
+            </button></li>
+        </ul>
+      </div>
     </div>
   </div>
+  <app-sobremiform></app-sobremiform>
 </section>

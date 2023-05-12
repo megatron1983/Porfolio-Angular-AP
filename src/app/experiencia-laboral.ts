@@ -8,8 +8,8 @@ export class ExperienciaLaboral {
 
   constructor(
     logo: string,
-    fecha_inicio: any,
-    fecha_final: any,
+    fecha_inicio: string,
+    fecha_final: string,
     nombre_empresa: string,
     cargo: string,
     descripcion: string

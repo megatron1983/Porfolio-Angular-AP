@@ -1,13 +1,13 @@
 export class Educacion {
-  fecha_inicio: any = '';
-  fecha_final: any = '';
+  fecha_inicio: string = '';
+  fecha_final: string = '';
   nombre_empresa: string = '';
   titulo: string = '';
   descripcion: string = '';
 
   constructor(
-    fecha_inicio: any,
-    fecha_final: any,
+    fecha_inicio: string,
+    fecha_final: string,
     nombre_empresa: string,
     titulo: string,
     descripcion: string

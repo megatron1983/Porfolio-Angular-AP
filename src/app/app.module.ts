@@ -11,6 +11,15 @@ import { ProyectosComponent } from './component/proyectos/proyectos.component';
 import { ContactoComponent } from './component/contacto/contacto.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { InicioComponent } from './component/inicio/inicio.component';
+import { ContactoformComponent } from './component/contacto/contactoform/contactoform.component';
+import { ExperiencialaboralformComponent } from './component/experiencia-laboral/experiencialaboralform/experiencialaboralform.component';
+import { EducacionformComponent } from './component/educacion/educacionform/educacionform.component';
+import { ProyectosformComponent } from './component/proyectos/proyectosform/proyectosform.component';
+import { SobremiformComponent } from './component/sobre-mi/sobremiform/sobremiform.component';
+import { HabilidadesformComponent } from './component/habilidades/habilidadesform/habilidadesform.component';
+
+import { InicioformComponent } from './component/inicio/inicioform/inicioform.component';
+import { HeaderformComponent } from './component/header/headerform/headerform.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +33,15 @@ import { InicioComponent } from './component/inicio/inicio.component';
     ContactoComponent,
     FooterComponent,
     InicioComponent,
+    ContactoformComponent,
+    ExperiencialaboralformComponent,
+    EducacionformComponent,
+    ProyectosformComponent,
+    SobremiformComponent,
+    HabilidadesformComponent,
+    ProyectosformComponent,
+    InicioformComponent,
+    HeaderformComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule],
   providers: [],

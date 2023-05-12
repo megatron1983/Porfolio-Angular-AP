@@ -2,8 +2,113 @@
   <div class="conteiner">
     <div class="row"></div>
     <h2 class="titulo">Educación</h2>
-    <div class="col-lg-12 d-flex row">
+    <div *ngFor="let educacion of listaEducacion "
+      class="trabajo col-lg-10 col-sm-12 d-flex row justify-content-md-center">
+      <div class="col-lg-4 col-sm-12 ">
+        <ul class="fondo-datos">
+          <li>{{educacion.fecha_inicio}} - {{educacion.fecha_final}}</li>
+          <li>{{educacion.nombre_empresa}}</li>
+        </ul>
+      </div>
+      <div class="col-lg-8 col-sm-12">
+        <ul>
+          <li>
+            <h4>{{educacion.titulo}}</h4>
+          </li>
+          <li>
+            {{educacion.descripcion}}
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-12 col-sm-12 ">
+        <ul class="botones-back">
 
+          <li><button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#editar-educacion-1">
+              <i class="fa-solid fa-pen-to-square fa-2x" style="color: #1cad7d;"></i>
+
+            </button>
+
+          </li>
+          <li><button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#eliminar-educacion-1">
+              <i class="fa-solid fa-trash-can fa-2x" style="color: #1cad7d;"></i>
+            </button></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  Modal editar-experiencia-laboral
+  <div class="modal fade" id="editar-educacion-1" tabindex="-1" aria-labelledby="#editar-educacion-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Fecha Final</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Fecha de Inicio</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Nombre de la Empresa</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Título</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Descripción</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" data-msg="Escribe un mensaje"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  Final modal editar-educacion-1
+
+  Modal eliminar-educacion-1
+  <div class="modal fade" id="eliminar-educacion-1" tabindex="-1" aria-labelledby="#eliminar-educacion-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>¿Desea eliminar esta sección educativa?</p>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Si</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--<div class="col-lg-12 d-flex row">
+       Inicio educación-1
       <div class="trabajo col-lg-10 col-sm-12 d-flex row justify-content-md-center">
         <div class="col-lg-4 col-sm-12 ">
           <ul class="fondo-datos">
@@ -14,7 +119,7 @@
         <div class="col-lg-8 col-sm-12">
           <ul>
             <li>
-              <h4>Desarrollador Full Stack</h4>
+              <h4>Dsarrollador Full Stack</h4>
             </li>
             <li>
               Es un programa para acceder a capacitaciones gratuitas en: programación, testing y
@@ -24,6 +129,95 @@
         </div>
       </div>
     </div>
+    <div class="col-lg-12 col-sm-12 ">
+      <ul class="botones-back">
+
+        <li><button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#editar-educacion-1">
+            <i class="fa-solid fa-pen-to-square fa-2x" style="color: #1cad7d;"></i>
+
+          </button>
+
+        </li>
+        <li><button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#eliminar-educacion-1">
+            <i class="fa-solid fa-trash-can fa-2x" style="color: #1cad7d;"></i>
+          </button></li>
+      </ul>
+    </div>
+     Modal  editar-experiencia-laboral
+    <div class="modal fade" id="editar-educacion-1" tabindex="-1" aria-labelledby="#editar-educacion-1"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Fecha Final</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Fecha de Inicio</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Nombre de la Empresa</label>
+                <input type="text" class="form-control" id="exampleInputPassword1">
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Título</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+              </div>
+
+
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Descripción</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" data-msg="Escribe un mensaje"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+     Final modal editar-educacion-1
+
+     Modal  eliminar-educacion-1
+    <div class="modal fade" id="eliminar-educacion-1" tabindex="-1" aria-labelledby="#eliminar-educacion-1"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>¿Desea eliminar esta sección educativa?</p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Si</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+     Final modal-eliminar educacion-1
+
+     Final educacion-1
+
+     Inicio educacion-2
 
     <div class="col-lg-12 d-flex row">
 
@@ -50,35 +244,140 @@
         </ul>
       </div>
     </div>
+
+
+  <div class="col-lg-12 col-sm-12 ">
+    <ul class="botones-back">
+
+      <li><button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#editar-educacion-2">
+          <i class="fa-solid fa-pen-to-square fa-2x" style="color: #1cad7d;"></i>
+
+        </button>
+
+      </li>
+      <li><button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#eliminar-educacion-2">
+          <i class="fa-solid fa-trash-can fa-2x" style="color: #1cad7d;"></i>
+        </button></li>
+    </ul>
   </div>
+   Modal  editar-ecucacion-2
+  <div class="modal fade" id="editar-educacion-2" tabindex="-1" aria-labelledby="#editar-educacion-2"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
 
-  <div class="col-lg-12 d-flex row">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Fecha Final</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Fecha de Inicio</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Nombre de la Empresa</label>
+              <input type="text" class="form-control" id="exampleInputPassword1">
+            </div>
 
-    <div class="trabajo col-lg-10 col-sm-12 d-flex row justify-content-md-center">
-      <div class="col-lg-4 col-sm-12 ">
-        <ul class="fondo-datos">
-          <li>2010 - 2019</li>
-          <li>Universidad Nacional de San Luis</li>
-        </ul>
-      </div>
-      <div class="col-lg-8 col-sm-12">
-        <ul>
-          <li>
-            <h4>Tecnicatura Universitaria en Redes de Computadoras</h4>
-          </li>
-          <li>
-            Preparar graduados capacitados para desempeñarse adecuadamente en ambientes de redes de
-            computadoras de acuerdo a las exigencias actuales, y que sean capaces de manejar con
-            idoneidad los conceptos y principios del ámbito de su competencia; comprender y utilizar
-            los manuales y bibliografía adecuada; y manejar con idoneidad las técnicas
-            experimentales necesarias. Al término de sus estudios el egresado deberá estar
-            capacitado para: Identificar y conocer adecuadamente las topologías de red, protocolos y
-            estándares. Instalar y configurar el hardware de red de clientes y servidores. Instalar
-            y configurar el software de red de clientes y servidores.
-        </ul>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Título</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+            </div>
+
+
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Descripción</label>
+              <textarea class="form-control" id="mensaje" name="mensaje" data-msg="Escribe un mensaje"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Salir</button>
+
+        </div>
       </div>
     </div>
   </div>
+   Final modal editar-educacion-1
 
+   Modal  eliminar-educacion-1
+  <div class="modal fade" id="eliminar-educacion-2" tabindex="-1" aria-labelledby="#eliminar-educacion-2"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>¿Desea eliminar esta sección educativa?</p>
 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Si</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+   Final modal-eliminar educacion
+
+   Final educacion-2
+  <div class="col-lg-12 d-flex row"> -->
+
+  <div class="trabajo col-lg-10 col-sm-12 d-flex row justify-content-md-center">
+    <div class="col-lg-4 col-sm-12 ">
+      <ul class="fondo-datos">
+        <li>2010 - 2019</li>
+        <li>Universidad Nacional de San Luis</li>
+      </ul>
+    </div>
+    <div class="col-lg-8 col-sm-12">
+      <ul>
+        <li>
+          <h4>Tecnicatura Universitaria en Redes de Computadoras</h4>
+        </li>
+        <li>
+          Preparar graduados capacitados para desempeñarse adecuadamente en ambientes de redes de
+          computadoras de acuerdo a las exigencias actuales, y que sean capaces de manejar con
+          idoneidad los conceptos y principios del ámbito de su competencia; comprender y utilizar
+          los manuales y bibliografía adecuada; y manejar con idoneidad las técnicas
+          experimentales necesarias. Al término de sus estudios el egresado deberá estar
+          capacitado para: Identificar y conocer adecuadamente las topologías de red, protocolos y
+          estándares. Instalar y configurar el hardware de red de clientes y servidores. Instalar
+          y configurar el software de red de clientes y servidores.
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-lg-12 col-sm-12 ">
+    <ul class="botones-back">
+
+      <li><button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#editar-educacion-3">
+          <i class="fa-solid fa-pen-to-square fa-2x" style="color: #1cad7d;"></i>
+
+        </button>
+
+      </li>
+      <li><button type="button" class="btn login" data-bs-toggle="modal" data-bs-target="#eliminar-educacion-3">
+          <i class="fa-solid fa-trash-can fa-2x" style="color: #1cad7d;"></i>
+        </button></li>
+    </ul>
+  </div>
+  <!-- Modal  editar-educacion-3-->
+
+  <!-- Final modal-eliminar educacion-3-->
+
+  <!-- Final educacion-3-->
+  <app-educacionform></app-educacionform>
 </section>
