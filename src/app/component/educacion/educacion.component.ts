@@ -36,6 +36,34 @@ export class EducacionComponent {
     },
   ];
   constructor(private service: EducacionserviService) {
-    //this.service.listarEducacion();
+    this.listarTodo();
+  }
+
+  listarTodo(): void {
+    this.service.listarEducaciones().subscribe({
+      next: (response) => {
+        Object.assign(this.listaEducacion, []);
+        Object.assign(this.listaEducacion, response);
+      },
+      error: (error) => console.error(error),
+    });
+  }
+
+  guardar(model: Educacion): void {
+    this.service.actualizar(model).subscribe({
+      next: () => this.listarTodo(),
+    });
+  }
+
+  eliminar(id: number): void {
+    this.service.eliminar(id).subscribe({
+      next: () => this.listarTodo(),
+    });
+  }
+
+  buscar(id: number): void {
+    this.service.buscar(id).subscribe({
+      next: (res) => console.log(res),
+    });
   }
 }
